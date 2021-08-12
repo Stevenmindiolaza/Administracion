@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="static/vendor/fontawesome-free/css/all.min.css">
+    <!--referencia libreria Bootstrap-->
+    <link rel="stylesheet" href="static/css/bootstrap-custom.css">
+
+</head>
+<body>
+
+<!-- Cabecera de la Pagina -->
+<header id="id-header">
+    <nav class="navbar navbar-landing navbar-expand-lg navbar-dark bg-primary p-2 bd-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand mr-auto" href="../seguridad/">
+                <i class="fa fa-globe"></i>
+                <b>Juan Bautista Aguirre</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            01 Clientes </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 14px">
+                            <a class="dropdown-item disabled" href="#">
+                                1 MANTENIMIENTO </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../cliente/cli_record_clientes.php?m=0000000403">
+                                2 Clientes </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">
+                                2 DOCUMENTOS </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../cliente/cli_document_ingresos.php?m=0000000401">
+                                01 Comprobante de Ingreso </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">
+                                3 PROCESOS </a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">
+                                4 INFORMES </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../cliente/cli_info_cardex.php?m=0000000408">
+                                03 Estado de Cuenta </a>
+                            <a class="dropdown-item" href="../cliente/cli_info_deudas.php?m=0000000413">
+                                04 Deudas Pendientes </a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            05 Ventas </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 14px">
+                            <a class="dropdown-item disabled" href="#">
+                                2 DOCUMENTOS </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../venta/ven_document_facturas.php?m=0000000351">
+                                2 Factura de Venta </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">
+                                4 INFORMES </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../venta/ven_info_ventas_semanales.php?m=0000020014">
+                                Ventas Semanales </a>
+                            <a class="dropdown-item" href="../venta/ven_info_bitacora.php?m=0000020015">
+                                Bitácora </a>
+                            <a class="dropdown-item" href="../venta/ven_info_ventas_efectividad.php?m=0000020016">
+                                Efectividad en Ventas </a>
+                            <a class="dropdown-item"
+                               href="../venta/ven_info_cartilla_recaudador_activas.php?m=0000020017">
+                                Cartillas Activas Recaudador </a>
+                            <a class="dropdown-item"
+                               href="../venta/ven_info_consolidado_semanal_ventas.php?m=0000020019">
+                                Consolidado Semanal Ventas </a>
+                            <a class="dropdown-item" href="../venta/ven_info_facturas.php?m=0100000003">
+                                01 Facturas de Venta </a>
+                            <a class="dropdown-item" href="../venta/ven_info_devoluciones.php?m=0100000004">
+                                02 Devoluciones </a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            07 Comisiones </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 14px">
+                            <a class="dropdown-item disabled" href="#">
+                                VENDEDOR </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../comisiones/comisiones_vendedor.php?m=0000020023">
+                                Comision Vendedor </a>
+                            <a class="dropdown-item"
+                               href="../comisiones/comisiones_verificar_cartilla_pagada.php?m=0000020024">
+                                Cartilla Pagada Verificar </a>
+                            <a class="dropdown-item"
+                               href="../comisiones/comisiones_imprimir_rol_vendedor.php?m=0000020025">
+                                Imprimir Rol Vendedor </a>
+                            <a class="dropdown-item"
+                               href="../comisiones/verificar_cartilla_recaudacion.php?m=0000020026">
+                                VERIFICAR CARTILLA </a>
+                            <a class="dropdown-item" href="../comisiones/verificar_cartilla_estados.php?m=0000020027">
+                                CAMBIAR ESTADO CARTILLA </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">
+                                RECAUDADOR </a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            03 Caja y Bancos </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 14px">
+                            <a class="dropdown-item disabled" href="#">
+                                4 INFORMES </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../banco/ban_info_arqueo.php?m=0000000399">
+                                03 Arqueo de Caja </a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            05 Empleados </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 14px">
+                            <a class="dropdown-item disabled" href="#">
+                                1 MANTENIMIENTO </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../empleado/emp_record_empleados.php?m=0000000087">
+                                1 Empleados </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">
+                                2 DOCUMENTOS </a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll text-white" href="#" title="Cambiar Contraseña">
+                            <i class="fa fa-lock"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll text-white" href="../salir.php">
+                            <i class="fa fa-sign-out-alt"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- container //  -->
+    </nav>
+</header>
+<!-- Contenedor de la Pagina -->
+<main id="id-main">
+    <article class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav id="siteBreadcrumb" aria-label="breadcrumb" class="p-1">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../seguridad">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a
+                                href="../cliente/cli_record_clientes.php?m=0000000403&amp;s=07-LJ-002427">Clientes</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-5 col p-0">
+                <div class="card-header">
+                    <form action="" method="GET">
+                        <input type="hidden" name="m" value="0000000403">
+                        <div class="form-row align-items-center">
+                            <div class="col-md-10 input-group col-12">
+                                <div class="input-group-prepend">
+                                    <a id="id-btnnuevo" href="#" class="btn btn-success">
+                                        <i class="fa fa-plus-circle"></i>
+                                        Nuevo
+                                    </a>
+                                </div>
+                                <input type="text" name="s" value="" class="form-control"
+                                       placeholder="Buscar Clientes.">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12" style="width: 100%; margin-top: -21px">
+
+                                <a href="/cliente/cli_record_clientes_catalogo.php?m=0000000403"
+                                   class="btn btn-success mt-4 form-control">
+                                    <i class="fa fa-print"></i> Catálogo
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-body p-0 table-responsive">
+                    <div id="clientesreg_wrapper" class="dataTables_wrapper no-footer">
+                        <table id="id-tb-personas"
+                               class="table table-striped table-bordered table-hover table-sm sm-0 dataTable no-footer"
+                               role="grid">
+                            <thead class="bg-dark text-white text-center text-sm-center">
+                            <tr role="row">
+                                <th>Cedula</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Genero</th>
+                                <th>E.Civil</th>
+                                <th>Estado</th>
+                                <th>Acción</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-sm">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer p-0 d-none d-sm-block">
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+<!-- Formulario Modal dialogo -->
+<div id="id-form-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" id="id-cedula" class="form-control" placeholder="Cedula">
+                </div>
+
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" id="id-nombre" class="form-control" placeholder="Nombres">
+                </div>
+
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" id="id-apellido" class="form-control" placeholder="Apellidos">
+                </div>
+                <div class="form-group">
+                    <select class="custom-select" id="id-genero">
+                        <option value="">Seleccione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="">Estado Civil : </label>
+                    Soltero
+                    <input type="radio" class="custom-radio" name="estado_civil" value="Soltero">
+                    Casado
+                    <input type="radio" class="custom-radio" name="estado_civil" value="Casado">
+                    Unido
+                    <input type="radio" class="custom-radio" name="estado_civil" value="Unido">
+                </div>
+
+                <div class="form-group">
+                    <label class="">Estado :</label>
+                    <input type="checkbox" id="id-estado" name="estado">
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="id-btnguardar" class="btn btn-success">
+                    <i class="fa fa-save"></i> Guardar
+                </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pie de la Pagina -->
+<footer></footer>
+
+<!-- Referencia a las Librerias JavaScript (JQUERY) -->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Codigo JavaScript -->
+
+<script>
+
+    $(function () {
+
+        $('#id-btnnuevo').on('click', function () {
+            $('#id-form-modal').modal('toggle');
+        });
+
+
+        $('#id-btnguardar').on('click', function () {
+            let persona = new Object;
+            let cedula = $('#id-cedula').val();
+            let nombre = $('#id-nombre').val();
+            let apellido = $('#id-apellido').val();
+            let genero = $('#id-genero').val();
+
+            // Validacion para Checkbox
+            let estado = 'Inactivo';
+            if ($('#id-estado').is(":checked")) {
+                estado = 'Activo'
+            }
+
+            //Tomar el valor seleccionado de los Radio Buttom
+            let civil = $("input[name=estado_civil]:checked").val();
+
+            persona.cedula = cedula;
+            persona.nombre = nombre;
+            persona.apellido = apellido;
+            persona.genero = genero;
+            persona.estado = estado;
+            persona.civil = civil;
+
+            if (Ln.siExiste(persona)) {
+                alert('Numero de cedula ya esta Ingresado');
+                return;
+            }
+
+            Ln.crear(persona);
+
+            console.log(Ln.personas);
+
+            $('#id-form-modal').modal('hide');
+
+        });
+
+        // modelo de Negocio en Javascript
+        const Ln = {
+            personas: [],
+
+            crear: function (persona) {
+
+                if (!this.siExiste(persona)) { // si no existe agrega el objeto
+                    this.personas.push(persona);
+                    this.presentar();
+                }
+
+            },
+
+            siExiste: function (persona) {
+                for (let p of this.personas) {
+                    if (persona.cedula == p.cedula) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+
+            editar: function (persona) {
+
+            },
+            eliminar: function (persona) {
+
+            },
+            presentar: function () {
+
+                $('#id-tb-personas tbody').html('');
+
+                for (let p of this.personas) {
+                    let tr = '<tr>'; // filas tr
+                    // Columnas td
+                    tr += '<td>' + p.cedula + '</td>';
+                    tr += '<td>' + p.nombre + '</td>';
+                    tr += '<td>' + p.apellido + '</td>';
+                    tr += '<td>' + p.genero + '</td>';
+                    tr += '<td>' + p.civil + '</td>';
+                    tr += '<td>' + p.estado + '</td>';
+                    tr += '<td align="center"><button class="btn btn-info btn-sm" type="button">';
+                    tr += '<i class="fa fa-edit"></i></button></td>';
+                    <button class="btn btn-info btn-sm" type="button" value="'+p.cedula+'">";
+                            danger btn-sm ac-eliminar
+                    tr += '</tr>';
+                    //Agrego tr Dinamico en el DOM
+                    $('#id-tb-personas tbody').append(tr);
+                }
+            }
+        };
+
+    });
+</script>
+
+</body>
+</html>
